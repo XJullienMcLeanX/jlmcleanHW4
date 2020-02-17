@@ -1,0 +1,38 @@
+#navigation {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+  background-color: @NAVIGATIONBACKGROUND;
+  border-bottom: 1px solid @NAVIGATIONBORDER;
+
+  ul {
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    float: left;
+    a {
+      display: block;
+      padding: 8px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: @BLACK;
+      border-right: 1px solid @NAVIGATIONBORDER;
+      &:hover{
+        color: @RED;
+        background-color: @NAVIGATIONBACKGROUND;
+      }
+    }
+    &:first-child a {
+      border-left: 1px solid @NAVIGATIONBORDER;
+    }
+
+  }
+
+}
