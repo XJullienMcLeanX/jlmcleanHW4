@@ -60,6 +60,7 @@
   text-align: center;
 }
 #navigation {
+  position: fixed;
   width: 100%;
   float: left;
   margin: 0 0 1em 0;
